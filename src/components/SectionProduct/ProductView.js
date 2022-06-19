@@ -5,16 +5,18 @@ const ProductView = ( { shoes } ) => {
   return (
     <div>
       <main className='px-14 mt-40 grid grid-cols-2'>
-        <h2>HUSPUPPIESCO/CALZADO/{ shoes.nombre.toUpperCase() }</h2>
+        <h2 className='font-montserrat text-paris-paving'>HUSPUPPIESCO/CALZADO/{ shoes.nombre.toUpperCase() }</h2>
           <section className='mx-28 w-11/12'>
-              <h2>{ shoes.nombre.toUpperCase() }</h2>
-              <p>${ shoes.precio }</p>
-              <p>Cod. de producto { shoes.referencia }</p>
-              <div>
-                <h3>Color</h3>
-                <img className='border cursor-pointer' src={ `/products/${shoes.foto}` } width={70}  alt="miniautura zapato" />
+              <div className="my-3">
+                <h2 className="font-serif font-bold text-2xl tracking-wider text-paris-paving">{ shoes.nombre.toUpperCase() }</h2>
+                <p className="font-serif text-2xl font-bold text-nocturne-red">${ shoes.precio }</p>
+                <p className="text-herring-silver">Cod. de producto { shoes.referencia }</p>
               </div>
-              <h2>TALLA</h2>
+              <div>
+                <h3 className="font-sans text-paris-paving my-2">COLOR</h3>
+                <img className='border border-paris-paving cursor-pointer' src={ `/products/${shoes.foto}` } width={70}  alt="miniautura zapato" />
+              </div>
+              <h2 className="font-sans text-paris-paving mt-5 mb-2">TALLA</h2>
               <ul className='w-11/12 space-y-3'>
                 <div className='flex'>
                   <li className='border h-12 w-12 text-center mr-5 block '>5</li>
