@@ -1,12 +1,16 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
 import ProductView from '../SectionProduct/ProductView'
 
+import shoesJson from '../../data/zapato.json'
+
 export const Home = () => {
+
+  // const [shoes, setShoes] = useState(shoesJson);
+
+  console.log(shoesJson)
   return (
     <div>
-        <Navbar messageDiscount="HOT SALE -30% EN SANDALIAS"/>
-        <ProductView />
+        <ProductView shoes={shoesJson[0]} />
     </div>
   )
 }
