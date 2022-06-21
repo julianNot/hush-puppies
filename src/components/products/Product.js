@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export const Product = ({shoes}) => {
   return (
@@ -10,7 +11,7 @@ export const Product = ({shoes}) => {
       </ul>
       <h2 className='text-center font-sans'>{shoes.nombre}</h2>
       <p className='text-center text-nocturne-red text-xl mt-4 mb-2'>${shoes.precio}</p>
-      <button className='bg-nocturne-red px-14 py-3 text-white'>AÑADIR AL CARRIO</button>
+      <Link to={"/products/" + shoes.id } className='bg-nocturne-red px-14 py-3 text-white'>AÑADIR AL CARRIO</Link>
     </article> 
   )
 }

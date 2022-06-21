@@ -17,7 +17,7 @@ const Navbar = ({ messageDiscount }) => {
             </div>
             <section >
                 <div className="flex justify-between px-14 my-2">
-                    <Link to="/products"><img src={ logo } alt="perrito"/></Link>
+                    <Link to="/"><img src={ logo } alt="perrito"/></Link>
                     <div className="my-1">
                         <div className=' flex justify-end items-center mb-3'>
                             <div className='border px-2 border-paris-paving inline-block'>

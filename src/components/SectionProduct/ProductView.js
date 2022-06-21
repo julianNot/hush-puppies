@@ -9,7 +9,7 @@ const ProductView = ( { shoes } ) => {
       <main className='px-14 mt-40 grid grid-cols-2'>
           <section>
             <h2 className='font-montserrat text-paris-paving pb-6'>HUSPUPPIESCO / CALZADO / { shoes.nombre.toUpperCase() }</h2>
-            <img className='border-b' src={ `/products/${shoes.foto}` } width={500} height={350} alt="product"/>
+            <img className='border-b border-herring-silver' src={ `/products/${shoes.foto}` } width={500} height={350} alt="product"/>
               <ul className='flex space-x-2 mt-2'>
                 <li><img className='cursor-pointer' src={ `/products/${shoes.foto}` } width="70" alt="miniautura zapato"/></li>
                 <li><img className='cursor-pointer' src={ `/products/${shoes.foto}` } width="70" alt="miniautura zapato"/></li>

@@ -13,7 +13,9 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<Navbar messageDiscount="HOT SALE -30% EN SANDALIAS" />}>
-        <Route index element={<Home />} />
+        <Route index element={<Home />}/>
+        <Route path="/products" element={<Home />}/>
+        <Route path="/products/:id" element={<Cart  />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Route>
