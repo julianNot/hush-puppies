@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import 'boxicons'
+
 import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 import Navbar from './components/Navbar/Navbar';
